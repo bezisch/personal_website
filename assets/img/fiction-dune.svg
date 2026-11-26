@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="dune-title">
+  <title id="dune-title">Dune and the political economy of extractivism</title>
+  <defs>
+    <linearGradient id="dune-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#143f29"/>
+      <stop offset="1" stop-color="#1d5c3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#dune-sky)"/>
+  <circle cx="880" cy="210" r="118" fill="#e8dcc0" fill-opacity=".88"/>
+  <g fill="none" stroke="#e8dcc0" stroke-opacity=".55" stroke-width="1.5">
+    <path d="M0 520C160 470 300 560 460 520C620 480 760 430 920 480C1040 518 1120 500 1200 470"/>
+    <path d="M0 590C180 540 320 630 500 586C680 542 820 500 980 548C1070 574 1140 562 1200 544"/>
+    <path d="M0 670C200 620 360 710 560 664C760 618 900 590 1060 628C1130 645 1170 640 1200 632"/>
+  </g>
+  <g fill="#0f3321" fill-opacity=".55">
+    <path d="M0 700C180 648 340 738 540 692C740 646 880 618 1040 656C1120 675 1170 674 1200 666V900H0Z"/>
+    <path d="M0 790C200 748 380 828 580 790C780 752 940 742 1080 776C1140 791 1180 792 1200 790V900H0Z"/>
+  </g>
+  <g font-family="Archivo, Helvetica, Arial, sans-serif" fill="#e8dcc0">
+    <text x="64" y="100" font-size="13" letter-spacing="5">RADIO IF / LEGACY · INVASIONI (DAL) FUTURO</text>
+    <text x="60" y="330" font-size="150" font-weight="700" letter-spacing="-6">DUNE</text>
+    <text x="64" y="382" font-size="15" letter-spacing="4">THE POLITICAL ECONOMY OF EXTRACTIVISM</text>
+    <text x="64" y="850" font-size="12" letter-spacing="3">SCIENCE FICTION · RADIO INTERVIEW · ITALIAN</text>
+  </g>
+</svg>

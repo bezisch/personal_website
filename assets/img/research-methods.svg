@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="methods-title">
+  <title id="methods-title">Diagram of research methods</title>
+  <rect width="1600" height="1000" fill="#f4f7f4"/>
+  <text x="56" y="76" fill="#1d5c3a" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="17" letter-spacing="6">METHODS</text>
+  <text x="56" y="126" fill="#101210" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1">TEXT-AS-DATA &amp; CAUSAL INFERENCE</text>
+  <g stroke="#101210" stroke-opacity=".14" stroke-width="1">
+    <path d="M56 200H1544M56 900H1544"/>
+  </g>
+  <g font-family="Archivo, Helvetica, Arial, sans-serif">
+    <rect x="72" y="360" width="300" height="250" fill="#ffffff" stroke="#101210" stroke-width="1.5"/>
+    <text x="94" y="392" fill="#1d5c3a" font-size="12" letter-spacing="3">01</text>
+    <text x="94" y="432" fill="#101210" font-size="23" font-weight="700">CORPUS</text>
+    <text x="94" y="470" fill="#5c625d" font-size="14">Newspapers, corporate</text>
+    <text x="94" y="492" fill="#5c625d" font-size="14">documents, policy text</text>
+    <text x="94" y="514" fill="#5c625d" font-size="14">and geocoded facilities</text>
+
+    <rect x="452" y="360" width="300" height="250" fill="#ffffff" stroke="#101210" stroke-width="1.5"/>
+    <text x="474" y="392" fill="#1d5c3a" font-size="12" letter-spacing="3">02</text>
+    <text x="474" y="432" fill="#101210" font-size="23" font-weight="700">ANNOTATION</text>
+    <text x="474" y="470" fill="#5c625d" font-size="14">Topic models, NER,</text>
+    <text x="474" y="492" fill="#5c625d" font-size="14">sentiment and stance</text>
+    <text x="474" y="514" fill="#5c625d" font-size="14">classification</text>
+
+    <rect x="832" y="360" width="300" height="250" fill="#1d5c3a"/>
+    <text x="854" y="392" fill="#bcd8c7" font-size="12" letter-spacing="3">03</text>
+    <text x="854" y="432" fill="#ffffff" font-size="23" font-weight="700">ESTIMATION</text>
+    <text x="854" y="470" fill="#d7e6dc" font-size="14">Difference-in-differences,</text>
+    <text x="854" y="492" fill="#d7e6dc" font-size="14">quantile regression,</text>
+    <text x="854" y="514" fill="#d7e6dc" font-size="14">spatial co-location</text>
+
+    <rect x="1212" y="360" width="300" height="250" fill="#ffffff" stroke="#101210" stroke-width="1.5"/>
+    <text x="1234" y="392" fill="#1d5c3a" font-size="12" letter-spacing="3">04</text>
+    <text x="1234" y="432" fill="#101210" font-size="23" font-weight="700">INTERPRETATION</text>
+    <text x="1234" y="470" fill="#5c625d" font-size="14">Qualitative coding and</text>
+    <text x="1234" y="492" fill="#5c625d" font-size="14">the political economy</text>
+    <text x="1234" y="514" fill="#5c625d" font-size="14">of the results</text>
+  </g>
+  <g stroke="#1d5c3a" stroke-width="2" fill="none">
+    <path d="M378 485H440M390 475L402 485L390 495"/>
+    <path d="M758 485H820M770 475L782 485L770 495"/>
+    <path d="M1138 485H1200M1150 475L1162 485L1150 495"/>
+  </g>
+  <text x="56" y="946" fill="#5c625d" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2">CAUSAL ECONOMETRICS · COMPUTATIONAL SOCIAL SCIENCE</text>
+</svg>
