@@ -162,6 +162,7 @@ a:hover {
   letter-spacing: -0.015em;
   text-decoration: none;
   text-align: left;
+  white-space: nowrap;
 }
 
 .brand:hover {
@@ -420,10 +421,7 @@ main {
 }
 
 .eyebrow__divider {
-  width: 18px;
-  height: 1px;
-  background: var(--green);
-  transform: translateY(-3px);
+  display: none;
 }
 
 h1 {
@@ -564,8 +562,6 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
   background: var(--green-wash);
 }
 
@@ -888,6 +884,32 @@ h1 {
   text-transform: uppercase;
 }
 
+.new-badge {
+  display: inline-block;
+  margin-left: 9px;
+  padding: 1px 5px;
+  border: 1px solid currentColor;
+  color: #e2231a;
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  transform: translateY(-0.28em);
+}
+
+.new-badge--nav {
+  margin-left: 5px;
+  padding: 0 3px;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transform: translateY(-0.2em);
+}
+
 details.abstract {
   max-width: 760px;
   margin-top: 11px;
@@ -918,7 +940,7 @@ details.abstract summary::before {
 }
 
 details.abstract[open] summary::before {
-  content: "\2013";
+  content: "-";
 }
 
 details.abstract .abstract-body {
@@ -953,7 +975,7 @@ details.abstract .abstract-body {
 
 .card__media {
   margin: 0;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--green-wash);
 }
@@ -962,7 +984,7 @@ details.abstract .abstract-body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card__title {
@@ -1049,6 +1071,26 @@ details.abstract .abstract-body {
   letter-spacing: 0.03em;
 }
 
+.press-figure {
+  margin: 14px 0 0;
+}
+
+.press-figure img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.viz-frame {
+  display: block;
+  width: 100%;
+  height: 700px;
+  border: 0;
+  background: #fff;
+  pointer-events: none;
+}
+
 /* About / CV */
 
 .two-col {
@@ -1057,6 +1099,17 @@ details.abstract .abstract-body {
   gap: clamp(28px, 5vw, 64px);
   align-items: start;
   margin-top: 34px;
+}
+
+.about-figure {
+  max-width: 420px;
+  margin: 0;
+}
+
+.about-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .sidebar {
@@ -1290,6 +1343,10 @@ details.abstract .abstract-body {
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+.no-screen {
+  display: none;
 }
 
 [hidden] {
@@ -1532,6 +1589,10 @@ details.abstract .abstract-body {
   .menu-scrim,
   .no-print {
     display: none !important;
+  }
+
+  .no-screen {
+    display: block !important;
   }
 
   body {

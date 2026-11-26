@@ -98,4 +98,43 @@
       window.print();
     });
   });
+
+  var vizFrames = Array.prototype.slice.call(document.querySelectorAll(".viz-frame"));
+  if (vizFrames.length) {
+    var resizeViz = function (frame) {
+      try {
+        var doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document);
+        if (!doc) return;
+        var height = Math.max(
+          doc.documentElement ? doc.documentElement.scrollHeight : 0,
+          doc.body ? doc.body.scrollHeight : 0
+        );
+        if (height > 0) {
+          frame.style.height = height + "px";
+        }
+      } catch (error) {
+        return;
+      }
+    };
+
+    vizFrames.forEach(function (frame) {
+      frame.addEventListener("load", function () {
+        resizeViz(frame);
+        window.setTimeout(function () {
+          resizeViz(frame);
+        }, 400);
+        window.setTimeout(function () {
+          resizeViz(frame);
+        }, 1200);
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      vizFrames.forEach(function (frame) {
+        window.setTimeout(function () {
+          resizeViz(frame);
+        }, 200);
+      });
+    });
+  }
 })();
