@@ -105,6 +105,8 @@
       try {
         var doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document);
         if (!doc) return;
+        var plot = doc.querySelector(".plotly-graph-div");
+        if (!plot || plot.getBoundingClientRect().height < 100) return;
         var height = Math.max(
           doc.documentElement ? doc.documentElement.scrollHeight : 0,
           doc.body ? doc.body.scrollHeight : 0
@@ -118,6 +120,13 @@
     };
 
     vizFrames.forEach(function (frame) {
+      var sync = function () {
+        resizeViz(frame);
+      };
+      sync();
+      window.setTimeout(sync, 600);
+      window.setTimeout(sync, 1800);
+      window.setTimeout(sync, 3500);
       frame.addEventListener("load", function () {
         resizeViz(frame);
         window.setTimeout(function () {
